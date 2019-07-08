@@ -95,4 +95,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Gesture
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dclick.on=1 \
-    persist.screengesture=1
+    persist.screengesture=1 \
+    persist.swipeup=1
