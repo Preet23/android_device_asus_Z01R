@@ -25,6 +25,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=7
 
+# bob mode switch
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.odm.asus.receiverEnable=0 \
+    asus.sensor.proximity_status=-1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=true
