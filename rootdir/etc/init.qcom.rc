@@ -44,5 +44,28 @@ on property:persist.screengesture=0
 on property:persist.screengesture=1
     write /sys/bus/i2c/devices/3-0038/fts_gesture_mode 1
 
+#on property:persist.swipeup=1
+#    write /sys/bus/i2c/devices/3-0038/fts_swipe_mode 1
+
+# camera
+setprop ro.asus.camera.preview_beauty "0:1;1:1;2:1;3:0"
+setprop ro.asus.camera.video_beauty "0:1;1:1;2:1;3:0"
+setprop ro.asus.camera.preview_portrait "0:1;1:1;2:1;3:0"
+setprop ro.asus.camera.cam0.video_fps "HD@60,FHD@60,4K@60"
+setprop ro.asus.camera.cam1.video_fps "HD@30,FHD@30"
+setprop ro.asus.camera.cam2.video_fps "HD@30,FHD@30"
+setprop ro.asus.camera.cam3.video_fps "HD@30,FHD@30"
+setprop ro.asus.camera.dual_bokeh "0:0;1:0;2:0;3:1"
+setprop ro.asus.camera.lens_type "0:standard;1:standard;2:wide-angle;3:virtual"
+setprop ro.asus.camera.use_frame_processor "0"
+setprop ro.asus.camera.scene_mode "0:1;1:1;2:1;3:1"
+setprop ro.asus.camera.cam0.video_eis "invn"
+setprop ro.asus.camera.cam1.video_eis "invn"
+setprop ro.asus.camera.cam2.video_eis "invn"
+setprop ro.asus.camera.cam0.eis_invn.sup_list "4K@30,FHD@60,HD@30,TV@30,FHD18TO9@30"
+setprop ro.asus.camera.cam1.eis_invn.sup_list "FHD@30,HD@30,TV@30,FHD18TO9@30"
+setprop ro.asus.camera.cam2.eis_invn.sup_list "FHD@30,HD@30,TV@30,FHD18TO9@30"
+setprop camera.beautylive.support_flip "1"
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
