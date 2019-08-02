@@ -717,6 +717,9 @@
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
+
     <!-- Whether to enable fused location provider overlay which allows fused
          location provider to be replaced by an app at run-time. When disabled,
          only the config_fusedLocationProviderPackageName package will be
